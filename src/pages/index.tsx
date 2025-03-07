@@ -12,10 +12,10 @@ export default function Home() {
               <Image
                 src="/logo-light.png"
                 alt="FinTools Logo"
-                width={1200}
+                width={800}
                 height={0}
-                sizes="(max-width: 768px) 100vw, 1200px"
-                className="w-auto h-auto max-w-[1200px] object-contain"
+                sizes="(max-width: 768px) 100vw, 800px"
+                className="w-auto h-auto max-w-[800px] object-contain"
                 priority
               />
             </div>
