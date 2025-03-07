@@ -95,16 +95,22 @@ export default function Sidebar({isOpen, setIsOpen}: SidebarProps) {
         </button>
       </div>
 
-      <nav className="mt-6">
+      <nav className="mt-6 px-4 gap-4 flex-col space-y-2">
         {menuItems.map((item) => (
           <Link
             key={item.path}
             href={item.path}
-            className={`flex items-center px-4 py-3 ${
+            className={`flex items-center px-4 py-3 rounded-lg ${
               router.pathname === item.path
-                ? "text-blue-600 bg-blue-50"
-                : "text-gray-600"
-            } hover:bg-blue-50 hover:text-blue-600 transition-colors`}
+                ? "bg-blue-600 text-white"
+                : "text-gray-700"
+            }
+            ${
+              router.pathname === item.path
+                ? "hover:bg-blue-700"
+                : "hover:bg-blue-50"
+            }
+             transition-colors`}
           >
             <span className="inline-flex items-center justify-center">
               {item.icon}
