@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Layout>
-      <div className="max-w-4xl mx-auto space-y-8 py-12">
+      <div className="max-w-4xl mx-auto space-y-4 py-12">
         {/* Hero Section */}
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center w-full">
@@ -12,10 +12,10 @@ export default function Home() {
               <Image
                 src="/logo-light.png"
                 alt="FinTools Logo"
-                width={800}
+                width={600}
                 height={0}
-                sizes="(max-width: 768px) 100vw, 800px"
-                className="w-auto h-auto max-w-[800px] object-contain"
+                sizes="(max-width: 768px) 100vw, 500px"
+                className="w-auto h-auto max-w-[600px] object-contain"
                 priority
               />
             </div>
